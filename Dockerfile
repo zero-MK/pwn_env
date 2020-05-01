@@ -2,6 +2,7 @@ FROM ubuntu:19.10
 
 ENV DEBIAN_FRONTEND noninteractive
 
+
 RUN echo "deb http://mirrors.ustc.edu.cn/ubuntu/ eoan main restricted universe multiverse\ndeb-src http://mirrors.ustc.edu.cn/ubuntu/ eoan main restricted universe multiverse\ndeb http://mirrors.ustc.edu.cn/ubuntu/ eoan-updates main restricted universe multiverse\ndeb-src http://mirrors.ustc.edu.cn/ubuntu/ eoan-updates main restricted universe multiverse\ndeb http://mirrors.ustc.edu.cn/ubuntu/ eoan-backports main restricted universe multiverse\ndeb-src http://mirrors.ustc.edu.cn/ubuntu/ eoan-backports main restricted universe multiverse\ndeb http://mirrors.ustc.edu.cn/ubuntu/ eoan-security main restricted universe multiverse\ndeb-src http://mirrors.ustc.edu.cn/ubuntu/ eoan-security main restricted universe multiverse\ndeb http://mirrors.ustc.edu.cn/ubuntu/ eoan-proposed main restricted universe multiverse\ndeb-src http://mirrors.ustc.edu.cn/ubuntu/ eoan-proposed main restricted universe multiverse" > /etc/apt/sources.list && \
     apt update && \
     apt install -y vim curl openssh-server wget ncat python2 python-pip python3 python3-pip gdb gcc libc6-dev libc6-i386 git tmux zsh sudo language-pack-zh-hans ltrace strace cmake && \
