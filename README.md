@@ -141,7 +141,7 @@ docker run -it --rm --privileged pwn_env /usr/bin/zsh
 bash:
 
 ```bash
-docker run -it --rm --privileged pwn_env /usr/bin/zsh
+docker run -it --rm --privileged pwn_env /usr/bin/bash
 ```
 
 看你自己喜欢吧
